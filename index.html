@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AMETISTA'S | Joias e Acessórios</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <h1>AMETISTA'S</h1>
+            <p>Seu brilho, sua essência, seu estilo.</p>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+
+        <button id="abrir-carrinho" class="botao-carrinho" type="button">
+            🛍️ Sacola (<span id="quantidade-carrinho">0</span>)
+        </button>
+    </header>
+
+    <!-- DESTAQUE PRINCIPAL -->
+    <main>
+        <section id="inicio" class="banner">
+            <div class="banner-conteudo">
+                <h2>Realce sua beleza</h2>
+                <p>
+                    Descubra acessórios que combinam com sua essência
+                    e tornam cada momento especial.
+                </p>
+                <a href="#produtos" class="botao-banner">
+                    Conheça nossa coleção
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUTOS -->
+        <section id="produtos" class="secao-produtos">
+            <h2>Nossa coleção</h2>
+            <p class="descricao-secao">
+                Encontre o acessório perfeito para você.
+            </p>
+
+            <div class="grade-produtos">
+
+                <article class="produto">
+                    <div class="produto-imagem">
+                        <img
+                            src="https://placehold.co/400x400/f0e6fa/6b4b8a?text=Colar+Elegance"
+                            alt="Colar Elegance"
+                        >
+                    </div>
+
+                    <h3>Colar Elegance</h3>
+                    <p class="preco">R$ 59,90</p>
+
+                    <button
+                        type="button"
+                        class="botao-comprar"
+                        data-nome="Colar Elegance"
+                        data-preco="59.90"
+                    >
+                        Adicionar à sacola
+                    </button>
+                </article>
+
+                <article class="produto">
+                    <div class="produto-imagem">
+                        <img
+                            src="https://placehold.co/400x400/f0e6fa/6b4b8a?text=Brincos+Lumiere"
+                            alt="Brincos Lumière"
+                        >
+                    </div>
+
+                    <h3>Brincos Lumière</h3>
+                    <p class="preco">R$ 39,90</p>
+
+                    <button
+                        type="button"
+                        class="botao-comprar"
+                        data-nome="Brincos Lumière"
+                        data-preco="39.90"
+                    >
+                        Adicionar à sacola
+                    </button>
+                </article>
+
+                <article class="produto">
+                    <div class="produto-imagem">
+                        <img
+                            src="https://placehold.co/400x400/f0e6fa/6b4b8a?text=Pulseira+Charm"
+                            alt="Pulseira Charm"
+                        >
+                    </div>
+
+                    <h3>Pulseira Charm</h3>
+                    <p class="preco">R$ 44,90</p>
+
+                    <button
+                        type="button"
+                        class="botao-comprar"
+                        data-nome="Pulseira Charm"
+                        data-preco="44.90"
+                    >
+                        Adicionar à sacola
+                    </button>
+                </article>
+
+                <article class="produto">
+                    <div class="produto-imagem">
+                        <img
+                            src="https://placehold.co/400x400/f0e6fa/6b4b8a?text=Anel+Crystal"
+                            alt="Anel Crystal"
+                        >
+                    </div>
+
+                    <h3>Anel Crystal</h3>
+                    <p class="preco">R$ 34,90</p>
+
+                    <button
+                        type="button"
+                        class="botao-comprar"
+                        data-nome="Anel Crystal"
+                        data-preco="34.90"
+                    >
+                        Adicionar à sacola
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CARRINHO -->
+        <section id="area-carrinho" class="area-carrinho" hidden>
+            <div class="cabecalho-carrinho">
+                <h2>Minha sacola</h2>
+
+                <button
+                    id="fechar-carrinho"
+                    type="button"
+                    class="botao-fechar"
+                    aria-label="Fechar sacola"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <div id="itens-carrinho">
+                Sua sacola está vazia.
+            </div>
+
+            <div class="resumo-carrinho">
+                <h3>
+                    Total:
+                    <span id="total-carrinho">R$ 0,00</span>
+                </h3>
+            </div>
+        </section>
+
+        <!-- SOBRE A MARCA -->
+        <section id="sobre" class="secao-sobre">
+            <h2>Sobre a AMETISTA'S</h2>
+
+            <p>
+                Acreditamos que cada detalhe revela sua personalidade.
+                Nossa coleção foi pensada para valorizar seu estilo
+                e acompanhar você em momentos especiais.
+            </p>
+
+            <p class="frase-marca">
+                Seu brilho, sua essência, seu estilo.
+            </p>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+
+<footer class="rodape">
+    <p>© 2026 AMETISTA'S — Todos os direitos reservados.</p>
+    <p>Feito para quem gosta de brilhar. ✨</p>
+
+    <div class="contato-rodape">
+        <p>Desenvolvido por: Eva</p>
+        <p>
+            E-mail:
+            <a href="mailto: everllynsilva472@gmail.com">
+                SEU_EMAIL@exemplo.com
+            </a>
+        </p>
+    </div>
+</footer>
+
+.contato-rodape {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #d8c2eb;
+}
+
+.contato-rodape p {
+    margin: 6px 0;
+}
+
+.contato-rodape a {
+    color: #f0d58a;
+    text-decoration: none;
+}
+
+.contato-rodape a:hover {
+    text-decoration: underline;
+}
+
